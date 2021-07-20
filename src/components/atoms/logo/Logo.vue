@@ -59,7 +59,7 @@ export default {
 
     return {
       classes: computed(() => ({
-        [`h-${height()} rounded-${roundSize()}`]: true,
+        [`max-h-${height()} rounded-${roundSize()}`]: true,
         // [`bg-accent-01-${props.state}`]: true,
       })),
     };
