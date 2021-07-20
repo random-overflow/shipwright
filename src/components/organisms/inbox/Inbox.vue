@@ -58,11 +58,8 @@ export default {
     return {
       classes: computed(() => ({
         [`
-          bg-01-white text-high-contrast-light
-        `]: props.theme == "light",
-        [`
-          bg-02-dark text-high-contrast-dark
-        `]: props.theme == "dark",
+          bg-02-${props.theme} text-high-contrast-${props.theme}
+        `]: true,
         // [`bg-accent-01-${props.state}`]: true,
       })),
     };

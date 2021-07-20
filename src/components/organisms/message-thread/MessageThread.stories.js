@@ -21,7 +21,8 @@ const Template = (args) => ({
 
 export const Light = Template.bind({});
 Light.args = {
-    username: "Linda & Jeremiah J.",
+    sender: "user",
+    receiver: "Linda & Jeremiah J.",
     message: "The quick brown fox jumps over the lazy dog",
     time: "12:00",
     secondary: false,

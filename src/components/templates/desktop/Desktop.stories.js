@@ -23,11 +23,19 @@ const Template = (args) => ({
 export const Light = Template.bind({});
 Light.args = {
     value: true,
-    theme: "light"
+    theme: "light",
+    sender: "user",
+    receiver: "Linda & Jeremiah J.",
+    message: "The quick brown fox jumps over the lazy dog",
+    time: "12:00",
 };
 
 export const Dark = Template.bind({});
 Dark.args = {
     value: true,
-    theme: 'dark'
+    theme: 'dark',
+    sender: "user",
+    receiver: "Linda & Jeremiah J.",
+    message: "The quick brown fox jumps over the lazy dog",
+    time: "12:00",
 };

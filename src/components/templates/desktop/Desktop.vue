@@ -3,9 +3,16 @@
     <side-nav :theme="theme" class="col-span-2 h-screen" />
     <div class="flex flex-col col-span-10">
       <toolbar :theme="theme" />
-      <div class="flex flex-row">
+      <div class="flex flex-row flex-1">
         <inbox :theme="theme" class="height-right" />
-        <message-thread class="height-right" />
+        <message-thread
+          class="height-right"
+          :theme="theme"
+          :time="time"
+          :sender="sender"
+          :receiver="receiver"
+          :message="message"
+        />
       </div>
     </div>
   </div>
@@ -40,6 +47,18 @@ export default {
       required: true,
     },
     theme: {
+      type: String,
+    },
+    sender: {
+      type: String,
+    },
+    receiver: {
+      type: String,
+    },
+    message: {
+      type: String,
+    },
+    time: {
       type: String,
     },
   },

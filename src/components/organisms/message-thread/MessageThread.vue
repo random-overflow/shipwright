@@ -23,13 +23,48 @@
         <img :src="dotMenuSrc" alt="menu" />
       </div>
     </div>
-    <div class="flex flex-1 flex-col-reverse overflow-auto">
-      <div class="mt-auto">
-        <message class="" />
+    <div class="flex flex-1 flex-col-reverse overflow-auto mb-12 h-3/4">
+      <div class="mt-auto w-1/3">
+        <message
+          :message="message"
+          :username="receiver"
+          time="12:00 AM"
+          :isFirst="true"
+          :theme="theme"
+        />
+        <message
+          v-for="i in 3"
+          :key="i"
+          :message="message"
+          :username="receiver"
+          time="12:00 AM"
+          :isFirst="false"
+          :theme="theme"
+        />
+      </div>
+      <div class="mt-auto ml-auto w-1/3">
+        <message
+          :message="message"
+          :username="sender"
+          time="12:00 AM"
+          :isSender="true"
+          :isFirst="true"
+          :theme="theme"
+        />
+        <message
+          v-for="i in 3"
+          :key="i"
+          :message="message"
+          :username="sender"
+          :isSender="true"
+          time="12:00 AM"
+          :isFirst="false"
+          :theme="theme"
+        />
       </div>
     </div>
-    <div class="fixed bottom-0">
-      <message-composer />
+    <div class="sticky bottom-0 w-full">
+      <message-composer :theme="theme" />
     </div>
   </div>
 </template>
@@ -52,9 +87,6 @@ export default {
   props: {
     theme: {
       type: String,
-    },
-    secondary: {
-      type: Boolean,
     },
     sender: {
       type: String,
