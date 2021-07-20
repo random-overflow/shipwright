@@ -3,7 +3,7 @@
     type="text"
     :name="name"
     class="outline-none rounded-xl h-14 p-4 border-2"
-    :value="label"
+    :value="value"
     :class="classes"
     :disabled="state == 'deactivate'"
   />
@@ -25,7 +25,7 @@ export default {
   name: "ship-input",
 
   props: {
-    label: {
+    value: {
       type: String,
       required: true,
     },

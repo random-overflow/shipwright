@@ -4,7 +4,7 @@ export default {
   title: 'Atoms/Button',
   component: ShipButton,
   argTypes: {
-    state: { control: { type: 'select', options: ['active', 'inactive', 'selected', 'hover'] } },
+    state: { control: { type: 'radio', options: ['active', 'inactive', 'selected', 'hover'] } },
     onClick: {},
   },
 };
@@ -23,18 +23,22 @@ const Template = (args) => ({
 export const Primary = Template.bind({});
 Primary.args = {
   label: 'Button',
-  type: "primary"
+  type: "primary",
+  state: "active",
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
   label: 'Button',
-  type: 'secondary'
+  type: 'secondary',
+  state: "active",
+
 };
 
 export const Tertiary = Template.bind({});
 Tertiary.args = {
   label: 'Button',
-  type: 'tertiary'
+  type: 'tertiary',
+  state: "active",
 };
 

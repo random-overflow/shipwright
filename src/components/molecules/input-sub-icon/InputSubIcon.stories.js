@@ -1,8 +1,8 @@
-import ShipInput from './Input.vue';
+import InputSubIcon from './InputSubIcon.vue';
 
 export default {
-    title: 'Atoms/Input',
-    component: ShipInput,
+    title: 'Molecules/InputSubIcon',
+    component: InputSubIcon,
     argTypes: {
         state: { control: { type: 'radio', options: ['success', 'danger', 'deactivate', 'active'] } },
         onClick: {},
@@ -11,13 +11,13 @@ export default {
 
 const Template = (args) => ({
     // Components used in your story `template` are defined in the `components` object
-    components: { ShipInput },
+    components: { InputSubIcon },
     // The story's `args` need to be mapped into the template through the `setup()` method
     setup() {
         return { args };
     },
     // And then the `args` are bound to your component with `v-bind="args"`
-    template: '<ship-input v-bind="args" />',
+    template: '<input-sub-icon v-bind="args" />',
 });
 
 export const Light = Template.bind({});

@@ -1,7 +1,12 @@
 <template>
   <div class="block">
     <ship-input :value="value" :state="state" :theme="theme" :name="name" />
-    <p class="text-lg pt-1" :class="classes">{{ subtitle }}</p>
+    <div class="flex flex-row">
+      <img :src="iconSrc" :alt="iconSrc" />
+      <p class="text-lg pt-1" :class="classes">
+        {{ subtitle }}
+      </p>
+    </div>
   </div>
 </template>
 
@@ -10,7 +15,7 @@ import { reactive, computed } from "vue";
 import ShipInput from "../../atoms/input/Input.vue";
 
 export default {
-  name: "input-sub",
+  name: "input-sub-icon",
   components: {
     ShipInput,
   },
@@ -19,8 +24,13 @@ export default {
       type: String,
       required: true,
     },
+    icon: {
+      type: String,
+      default: "ico-close",
+    },
     subtitle: {
       type: String,
+      default: "Subtitle",
     },
     state: {
       type: String,
@@ -33,6 +43,14 @@ export default {
       type: String,
     },
   },
+
+  computed: {
+    iconSrc() {
+      let theme = this.theme[0].toUpperCase() + this.theme.slice(1);
+      return `/${theme}/Small/${this.icon}.svg`;
+    },
+  },
+
   setup(props) {
     props = reactive(props);
     return {

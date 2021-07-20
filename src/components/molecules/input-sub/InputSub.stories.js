@@ -4,7 +4,7 @@ export default {
     title: 'Molecules/InputSub',
     component: InputSub,
     argTypes: {
-        state: { control: { type: 'select', options: ['success', 'danger', 'deactivate', 'active'] } },
+        state: { control: { type: 'radio', options: ['success', 'danger', 'deactivate', 'active'] } },
         onClick: {},
     },
 };
@@ -17,18 +17,20 @@ const Template = (args) => ({
         return { args };
     },
     // And then the `args` are bound to your component with `v-bind="args"`
-    template: '<ship-input v-bind="args" />',
+    template: '<input-sub v-bind="args" />',
 });
 
 export const Light = Template.bind({});
 Light.args = {
-    label: 'Button',
-    theme: "light"
+    value: 'Value',
+    theme: "light",
+    subtitle: "Subtitle",
 };
 
 export const Dark = Template.bind({});
 Dark.args = {
-    label: 'Button',
-    theme: 'dark'
+    value: 'Value',
+    theme: 'dark',
+    subtitle: "Subtitle",
 };
 
