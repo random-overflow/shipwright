@@ -1,5 +1,8 @@
 <template>
-  <div class="flex flex-col justify-between w-full py-6 px-4" :class="classes">
+  <div
+    class="flex flex-col justify-between w-full py-6 px-4 min-h-0 max-h-full"
+    :class="classes"
+  >
     <div class="flex flex-col">
       <div class="flex flex-row pt-4 pb-8">
         <logo class="mx-4" name="ship-logo" size="md" />

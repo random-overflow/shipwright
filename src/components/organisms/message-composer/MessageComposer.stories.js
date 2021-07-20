@@ -1,8 +1,8 @@
-import CardMessage from './CardMessage.vue';
+import MessageComposer from './MessageComposer.vue';
 
 export default {
-    title: 'Organisms/CardMessage',
-    component: CardMessage,
+    title: 'Organisms/MessageComposer',
+    component: MessageComposer,
     argTypes: {
         onClick: {},
     },
@@ -10,31 +10,23 @@ export default {
 
 const Template = (args) => ({
     // Components used in your story `template` are defined in the `components` object
-    components: { CardMessage },
+    components: { MessageComposer },
     // The story's `args` need to be mapped into the template through the `setup()` method
     setup() {
         return { args };
     },
     // And then the `args` are bound to your component with `v-bind="args"`
-    template: '<card-message v-bind="args" />',
+    template: '<message-composer v-bind="args" />',
 });
 
 export const Light = Template.bind({});
 Light.args = {
-    username: "Linda & Jeremiah J.",
-    message: "The quick brown fox jumps over the lazy dog",
-    time: "12:00",
-    secondary: false,
-    read: false,
-    theme: "light",
+    value: true,
+    theme: "light"
 };
 
 export const Dark = Template.bind({});
 Dark.args = {
-    username: "Linda & Jeremiah J.",
-    message: "The quick brown fox jumps over the lazy dog",
-    time: "12:00",
-    secondary: false,
-    read: false,
+    value: true,
     theme: 'dark'
 };

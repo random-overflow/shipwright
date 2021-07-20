@@ -35,6 +35,8 @@ export default {
       switch (props.size) {
         case "lg":
           return 24;
+        case "md-1":
+          return 14;
         case "md":
           return 8;
         case "sm":

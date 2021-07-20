@@ -1,10 +1,11 @@
 <template>
-  <div class="grid grid-cols-12" :class="classes">
+  <div class="grid grid-cols-12 h-screen w-screen" :class="classes">
     <side-nav :theme="theme" class="col-span-2" />
     <div class="flex flex-col col-span-10">
       <toolbar :theme="theme" />
       <div class="flex flex-row">
         <inbox :theme="theme" />
+        <message-thread />
       </div>
     </div>
   </div>
@@ -15,6 +16,7 @@ import { reactive, computed } from "vue";
 import SideNav from "../../organisms/side-nav/SideNav.vue";
 import Inbox from "../../organisms/inbox/Inbox.vue";
 import Toolbar from "../../organisms/nav/Toolbar.vue";
+import MessageThread from "../../organisms/message-thread/MessageThread.vue";
 
 export default {
   name: "desktop",
@@ -23,6 +25,7 @@ export default {
     SideNav,
     Inbox,
     Toolbar,
+    MessageThread,
   },
 
   props: {
