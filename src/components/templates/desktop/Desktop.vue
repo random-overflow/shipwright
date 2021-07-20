@@ -1,15 +1,21 @@
 <template>
   <div class="grid grid-cols-12 h-screen w-screen" :class="classes">
-    <side-nav :theme="theme" class="col-span-2" />
+    <side-nav :theme="theme" class="col-span-2 h-screen" />
     <div class="flex flex-col col-span-10">
       <toolbar :theme="theme" />
       <div class="flex flex-row">
-        <inbox :theme="theme" />
-        <message-thread />
+        <inbox :theme="theme" class="height-right" />
+        <message-thread class="height-right" />
       </div>
     </div>
   </div>
 </template>
+
+<style scoped>
+.height-right {
+  height: calc(100vh - 5rem);
+}
+</style>
 
 <script>
 import { reactive, computed } from "vue";

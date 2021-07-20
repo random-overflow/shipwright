@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-row justify-between align-middle w-full py-6 px-4"
+    class="flex flex-row justify-between align-middle w-full py-6 max-h-20 px-4"
     :class="classes"
   >
     <div class="flex flex-row">
