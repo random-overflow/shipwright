@@ -23,7 +23,9 @@
         <img :src="dotMenuSrc" alt="menu" />
       </div>
     </div>
-    <div class="flex flex-1 flex-col-reverse overflow-auto mb-12 h-3/4">
+    <div
+      class="flex flex-1 flex-col-reverse overflow-auto mb-12 h-3/4 px-8 py-4"
+    >
       <div class="mt-auto w-1/3">
         <message
           :message="message"
