@@ -1,0 +1,66 @@
+info @storybook/vue3 v6.4.0-alpha.12
+info 
+info => Cleaning outputDir: /tmp/chromatic--213592-F8xfasnsIQY7
+info => Loading presets
+vite v2.4.0 building for production...
+transforming...
+Conflicting namespaces: "node_modules/@storybook/client-api/dist/esm/index.js" re-exports "combineParameters" from both "node_modules/@storybook/client-api/dist/esm/index.js" and "node_modules/@storybook/client-api/dist/esm/parameters.js" (will be ignored)
+Conflicting namespaces: "node_modules/@storybook/addon-docs/node_modules/@storybook/components/dist/esm/index.js" re-exports "components" from both "node_modules/@storybook/addon-docs/node_modules/@storybook/components/dist/esm/index.js" and "node_modules/@storybook/addon-docs/node_modules/@storybook/components/dist/esm/typography/DocumentFormatting.js" (will be ignored)
+Conflicting namespaces: "node_modules/@storybook/addon-docs/dist/esm/blocks/index.js" re-exports "SourceState" from both "node_modules/@storybook/addon-docs/dist/esm/blocks/Canvas.js" and "node_modules/@storybook/addon-docs/dist/esm/blocks/Source.js" (will be ignored)
+Use of eval is strongly discouraged, as it poses security risks and may cause issues with minification
+Use of eval is strongly discouraged, as it poses security risks and may cause issues with minification
+Use of eval is strongly discouraged, as it poses security risks and may cause issues with minification
+✓ 1187 modules transformed.
+rendering chunks...
+Sourcemap is likely to be incorrect: a plugin (vue-docgen) was used to transform files, but didn't generate a sourcemap for the transformation. Consult the plugin documentation for help
+Sourcemap is likely to be incorrect: a plugin (storybook-vite-inject-export-order-plugin) was used to transform files, but didn't generate a sourcemap for the transformation. Consult the plugin documentation for help
+Sourcemap is likely to be incorrect: a plugin (vue-docgen) was used to transform files, but didn't generate a sourcemap for the transformation. Consult the plugin documentation for help
+Sourcemap is likely to be incorrect: a plugin (storybook-vite-inject-export-order-plugin) was used to transform files, but didn't generate a sourcemap for the transformation. Consult the plugin documentation for help
+Sourcemap is likely to be incorrect: a plugin (vue-docgen) was used to transform files, but didn't generate a sourcemap for the transformation. Consult the plugin documentation for help
+Sourcemap is likely to be incorrect: a plugin (storybook-vite-inject-export-order-plugin) was used to transform files, but didn't generate a sourcemap for the transformation. Consult the plugin documentation for help
+Sourcemap is likely to be incorrect: a plugin (vue-docgen) was used to transform files, but didn't generate a sourcemap for the transformation. Consult the plugin documentation for help
+Sourcemap is likely to be incorrect: a plugin (storybook-vite-inject-export-order-plugin) was used to transform files, but didn't generate a sourcemap for the transformation. Consult the plugin documentation for help
+Sourcemap is likely to be incorrect: a plugin (vue-docgen) was used to transform files, but didn't generate a sourcemap for the transformation. Consult the plugin documentation for help
+Sourcemap is likely to be incorrect: a plugin (storybook-vite-inject-export-order-plugin) was used to transform files, but didn't generate a sourcemap for the transformation. Consult the plugin documentation for help
+Sourcemap is likely to be incorrect: a plugin (vue-docgen) was used to transform files, but didn't generate a sourcemap for the transformation. Consult the plugin documentation for help
+Sourcemap is likely to be incorrect: a plugin (storybook-vite-inject-export-order-plugin) was used to transform files, but didn't generate a sourcemap for the transformation. Consult the plugin documentation for help
+Sourcemap is likely to be incorrect: a plugin (vue-docgen) was used to transform files, but didn't generate a sourcemap for the transformation. Consult the plugin documentation for help
+Sourcemap is likely to be incorrect: a plugin (storybook-vite-inject-export-order-plugin) was used to transform files, but didn't generate a sourcemap for the transformation. Consult the plugin documentation for help
+Sourcemap is likely to be incorrect: a plugin (vue-docgen) was used to transform files, but didn't generate a sourcemap for the transformation. Consult the plugin documentation for help
+Sourcemap is likely to be incorrect: a plugin (storybook-vite-inject-export-order-plugin) was used to transform files, but didn't generate a sourcemap for the transformation. Consult the plugin documentation for help
+Sourcemap is likely to be incorrect: a plugin (vue-docgen) was used to transform files, but didn't generate a sourcemap for the transformation. Consult the plugin documentation for help
+Sourcemap is likely to be incorrect: a plugin (storybook-vite-inject-export-order-plugin) was used to transform files, but didn't generate a sourcemap for the transformation. Consult the plugin documentation for help
+Sourcemap is likely to be incorrect: a plugin (vue-docgen) was used to transform files, but didn't generate a sourcemap for the transformation. Consult the plugin documentation for help
+Sourcemap is likely to be incorrect: a plugin (storybook-vite-inject-export-order-plugin) was used to transform files, but didn't generate a sourcemap for the transformation. Consult the plugin documentation for help
+Sourcemap is likely to be incorrect: a plugin (vue-docgen) was used to transform files, but didn't generate a sourcemap for the transformation. Consult the plugin documentation for help
+Sourcemap is likely to be incorrect: a plugin (vue-docgen) was used to transform files, but didn't generate a sourcemap for the transformation. Consult the plugin documentation for help
+Sourcemap is likely to be incorrect: a plugin (storybook-vite-inject-export-order-plugin) was used to transform files, but didn't generate a sourcemap for the transformation. Consult the plugin documentation for help
+Sourcemap is likely to be incorrect: a plugin (storybook-vite-inject-export-order-plugin) was used to transform files, but didn't generate a sourcemap for the transformation. Consult the plugin documentation for help
+Sourcemap is likely to be incorrect: a plugin (vue-docgen) was used to transform files, but didn't generate a sourcemap for the transformation. Consult the plugin documentation for help
+Sourcemap is likely to be incorrect: a plugin (storybook-vite-inject-export-order-plugin) was used to transform files, but didn't generate a sourcemap for the transformation. Consult the plugin documentation for help
+Sourcemap is likely to be incorrect: a plugin (vue-docgen) was used to transform files, but didn't generate a sourcemap for the transformation. Consult the plugin documentation for help
+Sourcemap is likely to be incorrect: a plugin (storybook-vite-inject-export-order-plugin) was used to transform files, but didn't generate a sourcemap for the transformation. Consult the plugin documentation for help
+Sourcemap is likely to be incorrect: a plugin (vue-docgen) was used to transform files, but didn't generate a sourcemap for the transformation. Consult the plugin documentation for help
+Sourcemap is likely to be incorrect: a plugin (storybook-vite-inject-export-order-plugin) was used to transform files, but didn't generate a sourcemap for the transformation. Consult the plugin documentation for help
+../../../../tmp/chromatic--213592-F8xfasnsIQY7/iframe.html                                 1.06kb
+../../../../tmp/chromatic--213592-F8xfasnsIQY7/assets/iframe.53595072.js                   27.68kb / brotli: 4.91kb
+../../../../tmp/chromatic--213592-F8xfasnsIQY7/assets/iframe.53595072.js.map               7.08kb
+../../../../tmp/chromatic--213592-F8xfasnsIQY7/assets/Color.187bed61.js                    31.99kb / brotli: 10.24kb
+../../../../tmp/chromatic--213592-F8xfasnsIQY7/assets/Color.187bed61.js.map                115.23kb
+../../../../tmp/chromatic--213592-F8xfasnsIQY7/assets/WithTooltip.a4a6f442.js              36.96kb / brotli: 10.41kb
+../../../../tmp/chromatic--213592-F8xfasnsIQY7/assets/WithTooltip.a4a6f442.js.map          171.50kb
+../../../../tmp/chromatic--213592-F8xfasnsIQY7/assets/GlobalScrollAreaStyles.9fa6646c.js   10.03kb / brotli: 1.94kb
+../../../../tmp/chromatic--213592-F8xfasnsIQY7/assets/GlobalScrollAreaStyles.9fa6646c.js.map 19.90kb
+../../../../tmp/chromatic--213592-F8xfasnsIQY7/assets/iframe.db2aac65.css                  8.86kb / brotli: 2.35kb
+../../../../tmp/chromatic--213592-F8xfasnsIQY7/assets/syntaxhighlighter.5b1da735.js        65.57kb / brotli: 21.51kb
+../../../../tmp/chromatic--213592-F8xfasnsIQY7/assets/syntaxhighlighter.5b1da735.js.map    249.46kb
+../../../../tmp/chromatic--213592-F8xfasnsIQY7/assets/OverlayScrollbars.9084dbca.js        56.25kb / brotli: 20.83kb
+../../../../tmp/chromatic--213592-F8xfasnsIQY7/assets/OverlayScrollbars.9084dbca.js.map    484.04kb
+../../../../tmp/chromatic--213592-F8xfasnsIQY7/assets/vendor.d0be2955.js                   1099.79kb / brotli: skipped (large chunk)
+../../../../tmp/chromatic--213592-F8xfasnsIQY7/assets/vendor.d0be2955.js.map               3397.53kb
+
+(!) Some chunks are larger than 500kb after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/guide/en/#outputmanualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+info => Output directory: /tmp/chromatic--213592-F8xfasnsIQY7

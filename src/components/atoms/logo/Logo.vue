@@ -34,32 +34,34 @@ export default {
     let height = () => {
       switch (props.size) {
         case "lg":
-          return 24;
+          return "h-24";
+        case "md-1":
+          return "h-14";
         case "md":
-          return 10;
+          return "h-8";
         case "sm":
-          return 6;
+          return "h-6";
         default:
-          return 24;
+          return "h-24";
       }
     };
 
     let roundSize = () => {
       switch (props.type) {
         case "circle":
-          return "full";
+          return "rounded-full";
         case "rounded":
-          return "3xl";
+          return "rounded-3xl";
         case "square":
-          return "none";
+          return "rounded-none";
         default:
-          return "none";
+          return "rounded-none";
       }
     };
 
     return {
       classes: computed(() => ({
-        [`max-h-${height()} rounded-${roundSize()}`]: true,
+        [`${height()} ${roundSize()}`]: true,
         // [`bg-accent-01-${props.state}`]: true,
       })),
     };
