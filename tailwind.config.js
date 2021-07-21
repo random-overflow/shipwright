@@ -1,5 +1,14 @@
 module.exports = {
-  purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+  purge: {
+    content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+    safelist: [
+      '*-01-light',
+      '*-02-light',
+      '*-01-dark',
+      '*-02-dark',
+      '*-accent-*',
+    ]
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {

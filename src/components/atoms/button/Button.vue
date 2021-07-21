@@ -34,6 +34,7 @@ export default {
 
   setup(props, { emit }) {
     props = reactive(props);
+
     return {
       classes: computed(() => ({
         [`bg-accent-01-${props.state} hover:bg-accent-01-hover text-white`]:
