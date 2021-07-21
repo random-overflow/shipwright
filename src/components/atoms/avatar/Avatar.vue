@@ -61,7 +61,7 @@ export default {
 
     return {
       classes: computed(() => ({
-        [`h-${height()} ${roundSize()}`]: true,
+        [`${height()} ${roundSize()}`]: true,
         // [`bg-accent-01-${props.state}`]: true,
       })),
     };
