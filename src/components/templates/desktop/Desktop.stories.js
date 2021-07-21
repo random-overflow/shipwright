@@ -4,8 +4,6 @@ export default {
     title: 'Template/Desktop',
     component: Desktop,
     argTypes: {
-        size: { control: { type: 'radio', options: ["lg", "md", "sm"] } },
-        type: { control: { type: 'radio', options: ["circle", "rounded", "square"] } },
         onClick: {},
     },
 };
