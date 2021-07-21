@@ -1,10 +1,10 @@
 <template>
   <div class="flex flex-col p-8 min-h-0" :class="classes">
-    <div class="flex flex-row justify-between">
+    <div class="flex flex-row justify-between pb-10">
       <div class="text-5xl">Inbox</div>
-      <ship-button label="Compose" />
+      <button-icon label="Compose" icon="ico-edit" />
     </div>
-    <div class="px-4 pt-12 overflow-y-auto min-h-0">
+    <div class="p-4 overflow-y-auto min-h-0">
       <card-message
         v-for="i in 8"
         :key="i"
@@ -23,6 +23,7 @@
 import { reactive, computed } from "vue";
 import ShipButton from "../../atoms/button/Button.vue";
 import CardMessage from "../card-message/CardMessage.vue";
+import ButtonIcon from "../../atoms/button-icon/ButtonIcon.vue";
 
 export default {
   name: "inbox",
@@ -30,6 +31,7 @@ export default {
   components: {
     ShipButton,
     CardMessage,
+    ButtonIcon,
   },
 
   props: {
