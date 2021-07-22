@@ -58,6 +58,7 @@ export default {
           props.type == "secondary",
         [`text-accent-01-${props.state} hover:text-accent-01-hover hover:bg-accent-01-tertiary`]:
           props.type == "tertiary",
+        ['rounded-full py-8']: !props.label,
         // [`bg-accent-01-${props.state}`]: true,
       })),
       onClick() {

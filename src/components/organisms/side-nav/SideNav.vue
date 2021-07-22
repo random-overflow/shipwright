@@ -1,14 +1,14 @@
 <template>
   <div
-    class="flex flex-col justify-between w-full py-6 px-4 min-h-0 max-h-full"
+    class="flex flex-col justify-between w-full py-6 px-4 min-h-0 md:max-h-full"
     :class="classes"
   >
     <div class="flex flex-col">
-      <div class="flex flex-row pt-4 pb-8">
+      <div class="flex flex-row md:pt-4 md:pb-8">
         <logo class="mx-4" name="ship-logo" size="md" />
         <div class="uppercase">Menu</div>
       </div>
-      <div class="flex flex-col">
+      <div v-if="!isMobile || (isMobile && open)" class="flex flex-col">
         <div
           v-for="i in 5"
           :key="i"
@@ -20,6 +20,7 @@
       </div>
     </div>
     <div
+    v-if="!isMobile || (isMobile && open)"
       class="flex flex-row justify-center items-center border-t-2 py-10 gap-4"
     >
       <avatar size="md" type="circle" />
@@ -49,6 +50,12 @@ export default {
     theme: {
       type: String,
     },
+    isMobile: {
+      type: Boolean,
+    },
+    open: {
+      type: Boolean,
+    }
   },
 
   computed: {

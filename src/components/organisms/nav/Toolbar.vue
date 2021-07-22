@@ -4,9 +4,9 @@
     :class="classes"
   >
     <div class="flex flex-row">
-      <img class="mx-1" :src="SearchIconSrc" alt="search" />
+      <img class="mx-1 hidden md:block" :src="SearchIconSrc" alt="search" />
       <input
-        class="mx-1 outline-none"
+        class="mx-1 outline-none hidden md:block"
         :class="classes"
         type="text"
         name="search"

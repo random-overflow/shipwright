@@ -6,7 +6,8 @@
         justify-between
         items-center
         border-b-2 border-gray-500
-        p-8
+        py-8
+        md:px-8
       "
     >
       <h1 class="capitalize">Welcome to the team!</h1>
@@ -24,9 +25,9 @@
       </div>
     </div>
     <div
-      class="flex flex-1 flex-col-reverse overflow-auto mb-12 h-3/4 px-8 py-4"
+      class="flex flex-1 flex-col-reverse overflow-y-auto overflow-x-hidden mb-12 h-3/4 px-8 py-4"
     >
-      <div class="mt-auto w-1/3">
+      <div class="mt-auto min-w-0 md:w-2/5">
         <message
           :message="message"
           :username="receiver"
@@ -44,7 +45,7 @@
           :theme="theme"
         />
       </div>
-      <div class="mt-auto ml-auto w-1/3">
+      <div class="mt-auto ml-auto md:w-2/5">
         <message
           :message="message"
           :username="sender"

@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col p-8 min-h-0" :class="classes">
-    <div class="flex flex-row justify-between pb-10">
+  <div class="flex flex-col p-4 md:p-8 min-h-0" :class="classes">
+    <div class="hidden md:flex flex-row justify-between pb-10">
       <div class="text-5xl">Inbox</div>
       <button-icon label="Compose" icon="ico-edit" />
     </div>
@@ -15,6 +15,9 @@
         :theme="theme"
         class="my-4"
       />
+    </div>
+    <div class="sticky bottom-0 w-full">
+      <button-icon icon="ico-email" class="ml-auto" />
     </div>
   </div>
 </template>

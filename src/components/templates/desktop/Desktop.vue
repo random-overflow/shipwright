@@ -1,7 +1,11 @@
 <template>
-  <div class="grid grid-cols-12 h-screen w-screen" :class="classes">
-    <side-nav :theme="theme" class="col-span-2 h-screen" />
-    <div class="flex flex-col col-span-10">
+  <div class="grid grid-cols-12 auto-rows-min h-screen w-screen" :class="classes">
+    <div class="flex flex-row col-span-12 md:col-span-2 ">
+      <side-nav :theme="theme" :isMobile="false" class="h-screen hidden md:flex" />
+      <side-nav :theme="theme" :isMobile="true" class="md:hidden" />
+      <toolbar class="md:hidden" :theme="theme" />
+    </div>
+    <div class="hidden md:flex flex-col col-span-10">
       <toolbar :theme="theme" />
       <div class="flex flex-row flex-1">
         <inbox :theme="theme" class="height-right" />
@@ -14,6 +18,9 @@
           :message="message"
         />
       </div>
+    </div>
+    <div class="col-span-12 md:hidden">
+      <inbox :theme="theme" class="height-right" />
     </div>
   </div>
 </template>

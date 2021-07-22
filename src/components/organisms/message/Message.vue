@@ -1,19 +1,21 @@
 <template>
-  <div class="flex flex-col w-full gap-4" :class="classes">
+  <div class="flex flex-col min-w-0 max-w-full gap-4" :class="classes">
     <div class="flex flex-row items-center gap-4">
       <template v-if="isFirst">
-        <avatar size="md-1" type="circle" />
-        <div class="flex flex-row justify-between flex-1">
-          <div class="text-2xl font-black">
-            {{ username }}
-          </div>
-          <div class="text-xl">
-            {{ time }}
+        <div class="flex flex-row gap-4 items-center pt-4 flex-1">
+          <avatar size="md-1" type="circle" />
+          <div class="flex flex-row justify-between flex-1 w-full">
+            <div class="text-2xl font-black">
+              {{ username }}
+            </div>
+            <div class="text-xl">
+              {{ time }}
+            </div>
           </div>
         </div>
       </template>
     </div>
-    <div class="flex flex-1 rounded-2xl" :class="cloud">
+    <div class="rounded-2xl" :class="cloud">
       <div class="p-8">
         {{ message }}
       </div>

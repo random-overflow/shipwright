@@ -5,7 +5,7 @@
   >
     <div class="flex flex-col flex-1">
       <div class="rounded-full h-4 w-4 ml-auto" :class="notify"></div>
-      <div class="flex flex-row gap-6">
+      <div class="flex flex-row items-center gap-6">
         <avatar type="circle" />
         <div class="flex flex-col flex-1">
           <div class="flex flex-row justify-between">
