@@ -45,7 +45,7 @@
           :theme="theme"
         />
       </div>
-      <div class="mt-auto ml-auto md:w-2/5">
+      <div class="flex flex-col items-end mt-auto ml-auto md:w-2/5">
         <message
           :message="message"
           :username="sender"

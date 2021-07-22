@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col min-w-0 max-w-full gap-4" :class="classes">
+  <div class="flex flex-col min-w-0 max-w-max gap-4" :class="classes">
     <div class="flex flex-row items-center gap-4">
       <template v-if="isFirst">
         <div class="flex flex-row gap-4 items-center pt-4 flex-1">
@@ -15,7 +15,7 @@
         </div>
       </template>
     </div>
-    <div class="rounded-2xl" :class="cloud">
+    <div class="rounded-2xl max-w-max" :class="cloud">
       <div class="p-8">
         {{ message }}
       </div>
