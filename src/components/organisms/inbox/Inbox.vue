@@ -16,7 +16,7 @@
         class="my-4"
       />
     </div>
-    <div class="sticky bottom-0 w-full">
+    <div class="md:hidden sticky bottom-0 w-full">
       <button-icon icon="ico-email" class="ml-auto" />
     </div>
   </div>
